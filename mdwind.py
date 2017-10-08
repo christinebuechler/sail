@@ -2,7 +2,7 @@
 import math
 
 
-# funktion gibt wahrer Windwinkel zurueck
+# funktion gibt wahrer Windwinkel (von wo Wind kommt) zurueck
 def RealWindAngle(ApparentWind, BoatSpeed, ApparentAngle):
  RealWindSpeed = math.sqrt(ApparentWind**2 + BoatSpeed**2 - 2*ApparentWind*BoatSpeed*math.cos(ApparentAngle))
  
@@ -15,4 +15,3 @@ def RealWindAngle(ApparentWind, BoatSpeed, ApparentAngle):
   result = result + 360
  
  return result      
-
