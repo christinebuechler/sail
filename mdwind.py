@@ -6,7 +6,7 @@ import math
 def RealWindAngle(ApparentWind, BoatSpeed, ApparentAngle):
  RealWindSpeed = math.sqrt(ApparentWind**2 + BoatSpeed**2 - 2*ApparentWind*BoatSpeed*math.cos(ApparentAngle))
  
- result = math.arccos((ApparentWind*math.cos(ApparentAngle)-BoatSpeed)/RealWindSpeed)
+ result = math.acos((ApparentWind*math.cos(ApparentAngle)-BoatSpeed)/RealWindSpeed)
  if (ApparentAngle > 180 and ApparentAngle < 360) or (ApparentAngle < 0 and ApparentAngle > -180):
   result = -result
   
